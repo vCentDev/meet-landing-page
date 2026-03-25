@@ -49,10 +49,16 @@ Users should be able to:
 
 - I have enhanced my CSS grid skills by utilizing it to arrange HTML elements for mobile, tablet, and desktop designs.
 
-- Creating a professional responsive CSS design is crucial, as is adapting the font size based on the device being used. To achieve that, I used the clamp()function.
+- Creating accessible HTML landmarks through semánic tags such as `<header>` `<section>` `<main>` with `aria-labelledby` property and linking with an heading tag such as `<h1> <h2>...` with the same name of given to a `aria-labelledby`. Where tags non semantic We can turn in to a landmark adding the property `<div role="region">`
 
-```css
-font-size: clamp(0.8125rem, 0.769rem + 0.2174vw, 0.9375rem);
+```html
+<section aria-labelledby="hero-title">
+  <h2 id="hero-title">Hero Main Title</h2>
+</section>
+
+<div role="region" aria-labelledby="cta-title">
+  <h2 id="cta-title">CTA Section</h2>
+</div>
 ```
 
 ### Continued development

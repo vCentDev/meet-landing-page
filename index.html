@@ -16,7 +16,8 @@
   </head>
 
   <body>
-    <nav class="nav">
+    <header class="site-header">
+    <nav class="nav" aria-label="Navegación principal">
       <a href="#" class="nav__link">
         <img
           class="nav__logo"
@@ -25,8 +26,10 @@
         />
       </a>
     </nav>
+  </header>
 
-    <header class="hero">
+
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero__combined">
         <div class="hero__combined-image">
           <img
@@ -43,7 +46,7 @@
         />
 
         <div class="hero__text-content">
-          <h1 class="hero__title">Group Chat for Everyone</h1>
+          <h1 id="hero-title" class="hero__title">Group Chat for Everyone</h1>
 
           <p class="hero__subtitle">
             Meet makes it easy to connect with others face-to-face virtually and
@@ -66,55 +69,54 @@
           alt="Some meet's app icon users"
         />
       </div>
-    </header>
+    </section>
 
-    <main class="main">
-      <div class="main__content">
-        <div class="number-component" aria-hidden="true">
-          <div class="number-component__rectangle"></div>
-          <div class="number-component__text">01</div>
+    <main class="main__content" aria-labelledby="features-title">
+      <div class="number-component" aria-hidden="true">
+        <div class="number-component__rectangle"></div>
+        <div class="number-component__text">01</div>
+      </div>
+
+      <div class="main__image-collage">
+        <img
+          class="main__collage-image"
+          src="assets/desktop/image-woman-in-videocall.jpg"
+          alt="Woman in a videocall"
+        />
+        <img
+          class="main__collage-image"
+          src="assets/desktop/image-women-videochatting.jpg"
+          alt="Women videochatting"
+        />
+        <img
+          class="main__collage-image"
+          src="assets/desktop/image-men-in-meeting.jpg"
+          alt="Men in meeting"
+        />
+        <img
+          class="main__collage-image"
+          src="assets/desktop/image-man-texting.jpg"
+          alt="Man texting"
+        />
+      </div>
+
+      <div class="main__text">
+        <div class="main__title">
+          <p class="main__overline">BUILT FOR MODERN USE</p>
+          <h2 id="features-title" class="main__heading">
+            Smarter meetings, all in one place
+          </h2>
         </div>
 
-        <div class="main__image-collage">
-          <img
-            class="main__collage-image"
-            src="assets/desktop/image-woman-in-videocall.jpg"
-            alt="Woman in a videcall"
-          />
-          <img
-            class="main__collage-image"
-            src="assets/desktop/image-women-videochatting.jpg"
-            alt="Women videochatting"
-          />
-          <img
-            class="main__collage-image"
-            src="assets/desktop/image-men-in-meeting.jpg"
-            alt="Men in meeting"
-          />
-          <img
-            class="main__collage-image"
-            src="assets/desktop/image-man-texting.jpg"
-            alt="Man texting"
-          />
-        </div>
-
-        <div class="main__text">
-          <div class="main__title">
-            <p class="main__overline">BUILT FOR MODERN USE</p>
-
-            <h2 class="main__heading">Smarter meetings, all in one place</h2>
-          </div>
-
-          <p class="main__description">
-            Send messages, share files, show your screen, and record your
-            meetings — all in one workspace. Control who can join with
-            invite-only team access, data encryption, and data export.
-          </p>
-        </div>
+        <p class="main__description">
+          Send messages, share files, show your screen, and record your
+          meetings — all in one workspace. Control who can join with
+          invite-only team access, data encryption, and data export.
+        </p>
       </div>
     </main>
 
-    <section class="cta">
+    <section class="cta" aria-labelledby="cta-title">
       <div class="number-component" aria-hidden="true">
         <div class="number-component__rectangle"></div>
         <div class="number-component__text">02</div>
@@ -122,11 +124,11 @@
 
       <div class="cta__wrapper">
         <div class="cta__content">
-          <h2 class="cta__title">Experience more together</h2>
+          <h2 id="cta-title" class="cta__title">Experience more together</h2>
 
           <p class="cta__description">
-            Experience more together Stay connected with reliable HD meetings
-            and unlimited one-on-one and group video sessions.
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
           </p>
 
           <div class="cta__button">
@@ -137,5 +139,5 @@
         </div>
       </div>
     </section>
-  </body>
+
 </html>

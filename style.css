@@ -108,10 +108,15 @@ h4 {
   text-wrap: balance;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: grid;
   place-items: center;
   min-width: 375px;
+  max-width: 1440px;
   min-height: 100dvh;
   margin: 0 auto;
 
@@ -123,6 +128,7 @@ body {
   text-align: center;
 
   background-color: var(--color-white);
+  overflow-x: hidden;
 }
 
 h2 {
@@ -220,6 +226,7 @@ h2 {
 /* Hero
    -------------------------------------------------------------------------- */
 .hero {
+  width: 100%;
   padding: var(--space-400);
   padding-top: var(--space-800);
   overflow: hidden;
@@ -287,13 +294,17 @@ h2 {
 }
 
 @media (width > 90em) {
+  .hero {
+    padding-inline: 0;
+  }
   .hero__combined {
     flex-direction: row;
+    justify-content: space-between;
   }
   .hero__image {
     display: block;
   }
-  .hero__image-tablet {
+  .hero__combined-image {
     display: none;
   }
 }
@@ -321,6 +332,7 @@ h2 {
 }
 
 .main__text {
+  max-width: 544px;
   display: flex;
   flex-direction: column;
   gap: var(--space-400);
@@ -356,6 +368,7 @@ h2 {
 /* cta
    -------------------------------------------------------------------------- */
 .cta {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: -28px;
